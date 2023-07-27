@@ -1,0 +1,80 @@
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.navbar-nav  li a:hover {
+    color: #F273E6 !important;
+}
+
+.footer-padding {
+	padding-bottom: 60px;
+}
+
+.footer {
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #F273E6;
+}
+
+.footer p {
+	margin-top: 25px;
+	font-size: 12px;
+  color: #fff;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  position: relative;
+}
+
+.main {
+    padding-bottom: 60px;
+
+}
+
+.footer-padding{
+  margin-top: 60px;
+}
+
+.post-full{
+  white-space: pre-wrap;
+}
+
+.post-btn{
+  float: right;
+  margin-left: 20px;
+}
+
+
+.darkmode-toggle {
+
+  z-index: 300;
+  background-image: url(/images/dark.png) !important;
+  background-size: cover;
+
+
+}
+
+.darkmode-toggle--white{
+  background-image: url(/images/light.png) !important;
+  /* background-size: cover; */
+
+}

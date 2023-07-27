@@ -1,0 +1,15 @@
+<%- include("partials/header") -%>
+
+<h1><%= headerText %></h1>
+<form class="" action="/compose" method="post">
+  <div class="form-group">
+    <label>Title</label>
+    <input class="form-control" type="text" name="postTitle" value= "<%= postName %>">
+    <label>Post</label>
+    <textarea class="form-control" name="postText" rows="5"><%= postContent %></textarea>
+  </div>
+  <!-- the button goes outside the div so I can get a little space between the button and the text box -->
+  <button class="btn btn-primary" type="submit" name="applyID" value="<%= postId %>"><%= buttonText %></button>
+</form>
+
+<%- include("partials/footer") -%>

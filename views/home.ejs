@@ -1,0 +1,23 @@
+<!-- since the header and footer were moved to partials folder inside views, i have to specified it (because they are not directly inside the views folder anymore)-->
+<%- include("partials/header") -%>
+
+<h1>Home</h1>
+<p><%= homeStartText %></p>
+
+<!-- This a new way of using a for loop for arrays in the newest Javascript versions. The .forEach is a method for arrays, and inside the parameter of its anonnymous function goes an element which is the singular of the items inside the array (example if its an array of fruits, the element would be fruit in singular (its like the "i" in the normal for loop))-->
+<% posts.forEach(function(post){ %>
+
+<% const content = post.body; %>
+
+<h1><%= post.title %></h1>
+
+
+<p>
+  <%= content.slice(0, 100) + " ..." %>
+  <a href="posts/<%= post._id %>">Read More</a>
+</p>
+
+
+<% }); %>
+
+<%- include("partials/footer") -%>
